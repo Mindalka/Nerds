@@ -1,0 +1,144 @@
+.slider{
+.container();
+background-color:#eeeeee;
+margin-bottom:80px;
+}
+
+.hidden-input{
+display:none;
+}
+
+.slider__controls label{
+display:inline-block;
+	width:20px;
+	height:20px;
+	margin-right:10px;
+	cursor:pointer;
+	background-color:transparent;
+	border:2px solid black;
+	border-radius:50%;
+}
+
+.slider__slide{
+	display:none;
+}
+
+#btn-1:checked~.slider #slide-1,
+#btn-2:checked~.slider #slide-2,
+#btn-3:checked~.slider #slide-3{
+	display:block;
+}
+
+
+#btn-2:checked~.slider #slide-2{
+background-image:url("../img/slide2.png");
+background-repeat:no-repeat;
+background-size:cover;
+}
+#btn-3:checked~.slider #slide-3{
+background-image:url("../img/slide3.png");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+#btn-1:checked~.slider label[for="btn-1"],
+#btn-2:checked~.slider label[for="btn-2"],
+#btn-3:checked~.slider label[for="btn-3"]{
+	background-color:black;
+}
+
+.slider__slide{
+background-image:url("../nerds/brown.png");
+background-image:no-repeat;
+background-size:cover;
+padding-bottom:30px;
+pagging-left:100px;
+}
+.slide-1{
+background-image:url("../img/slide1.png");
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+.slider__title{
+color:#000000;
+font-size:55px;
+line-height:55px;
+font-weight:400;
+}
+
+.slider__text{
+color:#283136;
+font-size:16px;
+line-height:24px;
+font-weight:200;
+margin-bottom:50px;
+}
+
+.slider__link{
+text-decoration:none;
+color:#ffffff;
+font-size:16px;
+line-height:18px;
+padding:20px 50px;
+background-color:#fb565a;
+}
+
+.slider__title{
+margin:0;
+padding-top:20px;}
+
+
+.slider__controls {
+margin:0 auto;
+display:inline-block;
+}
+
+@media @desktop-widths{
+#btn-2:checked~.slider #slide-2{
+background-image:url("../img/slide2.png");
+background-repeat:no-repeat;
+background-size:contain;
+background-position:100% 0%;
+}
+#btn-3:checked~.slider #slide-3{
+background-image:url("../img/slide3.png");
+background-repeat:no-repeat;
+background-size:contain;
+background-position:100% 0%;
+}
+#btn-1:checked~.slider #slide-1{
+background-image:url("../img/slide1.png");
+background-repeat:no-repeat;
+background-size:contain;
+background-position:100% 0%;
+}
+
+.slider__slide{
+height:300px;}
+
+.slider__title{
+margin:0;
+padding-top:80px;}
+
+.slider__controls {
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.slide{
+display:flex;
+flex-wrap:wrap;
+}
+.slider__slide{
+width:45%;padding-right:55%;
+padding-bottom:80px;
+}
+
+
+
+}
+
